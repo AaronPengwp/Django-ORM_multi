@@ -4,8 +4,8 @@ from django.db import models
 # Create your models here.
 
 class Book(models.Model):
-    name = models.CharField(max_length=20)
-    price = models.IntegerField()
+    name = models.CharField(max_length=20, verbose_name="姓名")
+    price = models.IntegerField("价格") # 要入在开始位置
     pub_date = models.DateField()
     publish = models.ForeignKey("Publish", on_delete=models.CASCADE)
 
