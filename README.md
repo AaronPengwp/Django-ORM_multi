@@ -1,4 +1,7 @@
 # Django-ORM_multi
+
+在多表操作的基础上添加了对admin的界面的使用
+
 多表操作（一对多）：
                #添加记录
                #publish_id=2
